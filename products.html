@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index styles/header.css"> 
+    <link rel="stylesheet" href="styles/index styles/main.css">
+    <link rel="icon" href="images/logos/logo.png" type="image/x-icon"> <!-- this is for displaying the icon on the url (: -->
+    <title>AAOH</title>
+</head>
+<body style="
+    background-color: #1a1a2e; 
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 300px;">
+    <!-- dear teammate, this is a style for the body in order to make space for our precious header ! (:-->
+    <header class="header-container">
+        <img class="logo img" src="images/logos/logo.png" style="width: 200px; height: 200px; vertical-align: middle;" alt="AAOH Logo">
+        <div class="logo" style="background-color: #16213e;">
+            AAOH Game store
+        </div>
+        <nav class="navigation-bar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cart.html" target="_blank" style="position: relative;">
+                <img src="images/icons/cart-icon.png" alt="Cart Icon" style="width:40px; height:40px; vertical-align: middle;">
+                <div class="label js-cart-elements">
+
+                </div>
+            </a>
+        </nav>
+        <input type="text" class="search-bar" placeholder="Search...">
+    </header>
+
+    <nav class="products-navigator">
+        <div class="categories">
+            <div class="adventure" onclick="filter('Adventure')">Adventure</div>
+            <div class="online" onclick="filter('online')">Action</div>
+        </div>
+    </nav>
+    <main class="main-container">
+        <div class="product-container js-product-container">
+            
+        </div>
+    </main>
+
+<script type="module" src="scripts/index.js"></script>
+</body>
+</html>
