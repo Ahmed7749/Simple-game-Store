@@ -27,18 +27,23 @@ let cartQuantity = document.querySelector(".label");
 const cart = [];
 function addItemToCart(productId) {
 
-    const product = getElementById(productId);
+    let matchingProduct = cart.find(product => product.id === productId);
 
-    if (product != null) {
-        if(existInCart(productId)){
-            product.quantity += 1;
-            updateCartQuantity();
-            return;
-        }
-        cart.push(product);
-
-        product.quantity += 1;
+    if (matchingProduct) {
+        matchingProduct.quantity += 1;
+        updateCartQuantity();
+        return;
     }
+    let product = getElementById(productId);
+    cart.push({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        description: product.description,
+        image: product.image,
+        type: product.type,
+        quantity: 1,
+    });
     updateCartQuantity();
 }
 
@@ -52,23 +57,15 @@ function updateCartQuantity(){
 }
 
 
-function existInCart(productId){
-    for(let i = 0; i < cart.length; i++){
-        if (cart[i].id === productId) {
-            return true;
-        }
-    }
-    return false;
-}
-
-function getElementById(id) {
-    for (let i = 0; i < products.length; i++){
-        if (products[i].id === id) {
+function getElementById(productId){
+    for(let i = 0; i < products.length; i++){
+        if(products[i].id === productId){
             return products[i];
         }
     }
     return null;
 }
+
 
 
 
