@@ -10,8 +10,8 @@
 }
 
 .hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    padding: 80px 20px;
+    background: #16213e;
+    padding: 60px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +24,7 @@
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #ffd166;
     margin-bottom: 20px;
 }
@@ -38,7 +38,7 @@
 .cta-button {
     background: #ff6b6b;
     color: white;
-    padding: 15px 30px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -51,61 +51,24 @@
 
 .hero-image {
     flex: 1;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-.floating-game-cards {
-    position: relative;
-    width: 300px;
-    height: 300px;
-}
-
-.game-card-small {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    background: #0f3460;
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    animation: float 3s ease-in-out infinite;
-}
-
-.card-1 {
-    top: 20px;
-    left: 0;
-    animation-delay: 0s;
-}
-
-.card-2 {
-    top: 100px;
-    right: 0;
-    animation-delay: 1s;
-}
-
-.card-3 {
-    bottom: 20px;
-    left: 60px;
-    animation-delay: 2s;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
 }
 
 .featured-games {
-    padding: 80px 0;
+    padding: 60px 0;
     background: #1a1a2e;
 }
 
 .featured-games h2 {
     text-align: center;
     color: #4ecdc4;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -135,48 +98,48 @@
 }
 
 .featured-game-info {
-    padding: 20px;
+    padding: 15px;
 }
 
 .featured-game-title {
     color: #ffd166;
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .game-type {
     background: #16213e;
     color: #4ecdc4;
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 15px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: inline-block;
-    margin: 8px 0;
+    margin: 5px 0;
 }
 
 .featured-game-price {
     color: #06d6a0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .stats {
-    padding: 80px 0;
+    padding: 60px 0;
     background: #16213e;
 }
 
 .stats h2 {
     text-align: center;
     color: #ffd166;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
 
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 20px;
     text-align: center;
 }
 
@@ -185,7 +148,7 @@
 }
 
 .stat-number {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #ff6b6b;
     margin-bottom: 10px;
@@ -209,34 +172,29 @@
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
     
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
-    .floating-game-cards {
-        width: 250px;
-        height: 250px;
-    }
-    
-    .game-card-small {
-        width: 100px;
-        height: 100px;
+    .featured-grid {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    .featured-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .stats-grid {
         grid-template-columns: 1fr;
     }
     
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .featured-games h2,
+    .stats h2 {
+        font-size: 1.8rem;
     }
 }
