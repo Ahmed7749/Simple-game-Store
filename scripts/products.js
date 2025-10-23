@@ -7,7 +7,7 @@ export const products = [
         price: 110,
         description: "Experience the epic tale of outlaw Arthur Morgan and the Van der Linde gang as they navigate the decline of the Wild West in this immersive open-world adventure.",
         image: "images/products/RDR2.png",
-        type: "RPG",
+        type: 'RPG',
         quantity: 0,
     },
     {
@@ -16,7 +16,7 @@ export const products = [
         price: 120,
         description: "Step into the shoes of Geralt of Rivia, a monster hunter known as a Witcher, as you explore a vast fantasy world filled with rich storytelling, complex characters, and thrilling combat.",
         image: "images/products/Witcher3.png",
-        type: "RPG",
+        type: 'RPG',
         quantity: 0,
     },
     {
@@ -25,7 +25,7 @@ export const products = [
         price: 200,
         description: "Dive into the neon-lit streets of Night City, a sprawling metropolis where you play as V, a mercenary outlaw on a quest for a one-of-a-kind implant that promises immortality.",
         image: "images/products/Cyberpunk2077.png",
-        type: "RPG",
+        type: 'RPG',
         quantity: 0,
     },
     {
@@ -34,7 +34,7 @@ export const products = [
         price: 25,
         description: "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. The world is your canvas and the ground itself is your paint.",
         image: "images/products/Terraria.webp",
-        type: "RPG",
+        type: 'RPG',
         quantity: 0,
     },
     {
@@ -43,7 +43,7 @@ export const products = [
         price: 150,
         description: "Embark on an epic dark fantasy adventure in a world filled with fearsome enemies and challenging environments. Face overwhelming odds to fulfill your duty and rekindle the First Flame.",
         image: "images/products/DarkSouls.webp",
-        type: "Soulslike",
+        type: 'soulslike',
         quantity: 0,
     },
     {
@@ -52,7 +52,7 @@ export const products = [
         price: 180,
         description: "In the late 13th century, the Mongol empire has laid waste to entire nations. Become Jin Sakai, a samurai warrior fighting to protect his homeland on the island of Tsushima.",
         image: "images/products/GhostOfTsushima.jpg",
-        
+        type: 'Adventure',
         quantity: 0,
     },
     {
@@ -61,6 +61,7 @@ export const products = [
         price: 170,
         description: "Embark on a shared-world adventure and become a pirate legend in this action-adventure game. Sail the seas, hunt for treasure, and engage in epic ship battles.",
         image: "images/products/SeaOfThieves.webp",
+        type: 'Adventure',
         quantity: 0,
     },
     {
@@ -69,6 +70,7 @@ export const products = [
         price: 45,
         description: "Forge your own path in an epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs.",
         image: "images/products/HollowKnight.jpg",
+        type: 'soulslike',
         quantity: 0,
     },
     {
@@ -77,6 +79,7 @@ export const products = [
         price: 30,
         description: "A cyberpunk action-platformer where you play as a retired veteran who must use their trusty harpoon and grappling hook abilities to explore a towering city and uncover its dark secrets.",
         image: "images/products/Sanabi.jpg",
+        type: 'Adventure',
         quantity: 0,
     },
     {
@@ -85,6 +88,7 @@ export const products = [
         price: 160,
         description: "Carve your own clever path to vengeance in this award-winning action-adventure. Take revenge. Restore your honor. Kill ingeniously.",
         image: "images/products/Sekiro.jpg",
+        type: 'soulslike',
         quantity: 0,
     }
 ];
