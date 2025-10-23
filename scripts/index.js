@@ -1,11 +1,5 @@
-// we will import the products
 import { products } from "./products.js";
-
-
-// we will fetch our precious elements (product container for html usage, buttons,  etc..)
 const productsContainer =  document.querySelector(".js-product-container");
-
-// now we will create a function that will render our products dynamically
 
 let html = "";
 

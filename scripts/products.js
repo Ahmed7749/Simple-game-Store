@@ -1,5 +1,3 @@
-// this is exclusively for products only since they take big major of our file <: 
-
 export const products = [
     {
         id: 1,
