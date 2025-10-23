@@ -77,21 +77,3 @@ addToCartButton.forEach( (button, index) => {
     });
 });
 
-
-function filter(type){
-    let filteredProducts = products.filter( (product) => product.type === type);
-    let html = "";
-    filteredProducts.forEach( (product) => {
-        html += `
-            <div class="product">
-                <h2>${product.name}</h2>
-                <div class="game-type">${product.type}</div>
-                <img src="${product.image}" alt="${product.name}" class="product-img"/>
-                <p>${product.description}</p>
-                <p>Price: ${product.price} SAR</p>
-                <button class="buy-button">Buy Now</button>
-            </div>`;
-    });
-    productsContainer.innerHTML = html; 
-}
-
