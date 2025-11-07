@@ -71,3 +71,94 @@ addToCartButton.forEach( (button, index) => {
     });
 });
 
+const adventureBtn = document.getElementById("adventure-button");
+const rpgBtn = document.getElementById("rpg-button");
+const soulslikeBtn = document.getElementById("soulslike-button");
+
+
+adventureBtn.addEventListener("click", () => {
+    displayByCategory('Adventure');
+});
+
+rpgBtn.addEventListener("click", () => {
+    displayByCategory('RPG');
+});
+
+soulslikeBtn.addEventListener("click", () => {
+    displayByCategory('soulslike');
+});
+
+
+
+function displayByCategory(type){
+    switch(type){
+        case 'RPG':
+            displayRpgGames(type);
+            break;
+        case 'soulslike':
+            displaySoulslikeGames(type);
+            break;
+        case 'Adventure':
+            displayAdventureGames(type);
+            break;
+    }
+}
+
+
+function displayRpgGames(type){
+    html = ``;
+    for(let i = 0; i  < products.length; i++){
+        if(products[i].type == 'RPG'){
+            html += `        
+                <div class="product">
+                    <h2>${products[i].name}</h2>
+                    <div class="game-type">${products[i].type}</div>
+                    <img src="${products[i].image}" alt="${products[i].name}" class="product-img"/>
+                    <p>${products[i].description}</p>
+                    <p>Price: ${products[i].price} SAR</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>`
+        }
+    }
+    productsContainer.innerHTML = html;
+}
+
+
+function displaySoulslikeGames(type){
+    html = ``;
+    for(let i = 0; i  < products.length; i++){
+        if(products[i].type == 'soulslike'){
+            html += `       
+                <div class="product">
+                    <h2>${products[i].name}</h2>
+                    <div class="game-type">${products[i].type}</div>
+                    <img src="${products[i].image}" alt="${products[i].name}" class="product-img"/>
+                    <p>${products[i].description}</p>
+                    <p>Price: ${products[i].price} SAR</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>`
+        }
+    }
+    productsContainer.innerHTML = html;
+}
+
+
+
+function displayAdventureGames(type){
+    html = ``;
+    for(let i = 0; i  < products.length; i++){
+        if(products[i].type == 'Adventure'){
+            html += `
+                <div class="product">
+                    <h2>${products[i].name}</h2>
+                    <div class="game-type">${products[i].type}</div>
+                    <img src="${products[i].image}" alt="${products[i].name}" class="product-img"/>
+                    <p>${products[i].description}</p>
+                    <p>Price: ${products[i].price} SAR</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>`
+        }
+    }
+    productsContainer.innerHTML = html;
+}
+
