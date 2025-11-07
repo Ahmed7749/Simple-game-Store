@@ -1,5 +1,8 @@
 import { products } from "./products.js";
 const productsContainer =  document.querySelector(".js-product-container");
+const adventureBtn = document.getElementById("adventure-button");
+const rpgBtn = document.getElementById("rpg-button");
+const soulslikeBtn = document.getElementById("soulslike-button");
 
 let html = "";
 
@@ -71,9 +74,7 @@ addToCartButton.forEach( (button, index) => {
     });
 });
 
-const adventureBtn = document.getElementById("adventure-button");
-const rpgBtn = document.getElementById("rpg-button");
-const soulslikeBtn = document.getElementById("soulslike-button");
+
 
 
 adventureBtn.addEventListener("click", () => {
