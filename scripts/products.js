@@ -88,5 +88,68 @@ export const products = [
         image: "images/products/Sekiro.jpg",
         type: 'soulslike',
         quantity: 0,
+    },
+
+    {
+        id: 11,
+        name: "Elden Ring",
+        price: 120,
+        description: "Step into a vast world of adventure in Elden Ring, where you can explore majestic landscapes, face formidable foes, and uncover the mysteries of the Lands Between in this critically acclaimed action RPG.",
+        image: "images/products/EldenRing.png",
+        type: 'soulslike',
+        quantity: 0,
+    },
+
+    {
+        id: 12,
+        name: "zelda breath of the wild",
+        price: 130,
+        description: "Step into a vast open world filled with adventure, mystery, and danger in The Legend of Zelda: Breath of the Wild. Explore the kingdom of Hyrule, solve puzzles, and battle formidable foes as you embark on a quest to save Princess Zelda and defeat the evil Calamity Ganon.",
+        image: "images/products/zelda.png",
+        type: 'Adventure',
+        quantity: 0,
+    },
+
+    {
+        id: 13,
+        name: "Super Mario Odyssey",
+        price: 140,
+        description: "Join Mario on a globe-trotting adventure in Super Mario Odyssey! Explore vibrant kingdoms, collect Power Moons, and use Mario's new friend Cappy to capture and control objects and enemies in this critically acclaimed platformer.",
+        image: "images/products/mario.webp",
+        type: 'Adventure',
+        quantity: 0,
+    },
+
+
+    {
+        id: 14,
+        name: "Ghost runner",
+        price: 50,
+        description: "Become a one-armed cybernetic ninja in a post-apocalyptic world, using your agility and combat skills to navigate through a towering city and take down enemies in this fast-paced action-platformer.",
+        image: "images/products/GhostRunner.png",
+        type: 'Adventure',
+        quantity: 0,
+    },
+
+
+    {
+        id: 15,
+        name: "Cuphead",
+        price: 35,
+        description: "Embark on a challenging run-and-gun adventure in Cuphead, where you play as Cuphead and Mugman, battling through a series of unique and visually stunning boss fights to repay your debt to the devil.",
+        image: "images/products/Cuphead.png",
+        type: 'Adventure',
+        quantity: 0,
+    },
+
+
+    {
+        id: 16,
+        name: "Celeste",
+        price: 40,
+        description: "Join Madeline on her journey to the top of Celeste Mountain in this critically acclaimed platformer. Overcome challenging obstacles, confront your inner demons, and discover the true meaning of perseverance.",
+        image: "images/products/Celeste.png",
+        type: 'Adventure',
+        quantity: 0,
     }
 ];
